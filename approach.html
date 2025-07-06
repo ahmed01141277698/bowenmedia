@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>bowenmedia</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+      <!-- Link Swiper's CSS -->
+
+          <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+<!-- nicescroll -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Truculenta:opsz@12..72&family=WDXL+Lubrifont+SC&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="assets/css/pagestyle.css">
+    <link rel="stylesheet" href="assets/css/approch.css">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  </head>
+  <body class="">
+
+    <!-- scroll bar -->
+    <div class="header-agency">
+      
+      <!-- Overlay Video Modal -->
+      <!-- scroll bar -->
+      <div class="scroller"></div>
+      <!-- back_video"> -->
+      <nav class="navbar">
+        <div class="row">
+          <div class="col">
+            <div class="nav_item">
+              <a href="#" class="logo" id="navLogo"> 
+                BOW<i class="fa-solid fa-bars"></i>N
+              </a>
+            </div>
+          </div>
+          <!-- dropdown -->
+          <div class="col col_expertise">
+            <div class="nav_item">
+              <div class="_tab">
+                <a href="#" class="link_show"
+                  >Expertise
+                  <i
+                    class="fas fa-hand-peace"
+                    style="font-size: 20px; color: white"
+                  ></i>
+                </a>
+                <a href="#" class="link_hidd"
+                  >Expertise
+                  <i
+                    class="fas fa-hand-peace"
+                    style="font-size: 20px; color: white"
+                  ></i>
+                </a>
+              </div>
+
+              <div class="dropdown-content">
+                <div class="dropdown_tab">
+                  <div class="tabs">
+                    <div class="tabEffect">
+                      <div class="tab _tabShow" data-content="content1">
+                        Web Design
+                      </div>
+                      <div class="tab _tabHidd" data-content="content1">
+                        Web Design
+                      </div>
+                    </div>
+                    <div class="tabEffect">
+                      <div class="tab _tabShow" data-content="content2">
+                        Web Design2
+                      </div>
+                      <div class="tab _tabHidd" data-content="content2">
+                        Web Design2
+                      </div>
+                    </div>
+                    <div class="tabEffect">
+                      <div class="tab _tabShow" data-content="content3">
+                        Web Design3
+                      </div>
+                      <div class="tab _tabHidd" data-content="content3">
+                        Web Design3
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-content">
+                    <div id="content1" class="content active">
+                      <img
+                        src="assets/images/pexels-pixabay-355952.jpg"
+                        alt="img"
+                      />
+                    </div>
+                    <div id="content2" class="content">
+                      <img
+                        src="assets/images/pexels-mart-production-7718663.jpg"
+                        alt="img"
+                      />
+                    </div>
+                    <div id="content3" class="content">
+                      <img
+                        src="assets/images/pexels-atbo-66986-245240.jpg"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+          </div>
+          <!-- /col -->
+          <div class="col">
+            <div class="nav_item">
+              <ul class="nav-links">
+                <li class="nav_list">
+                  <a href="#" class="link_show">Agency</a>
+                  <a href="#" class="link_hidd">Agency</a>
+                </li>
+                <li class="nav_list">
+                  <a href="#" class="link_show">Approach</a>
+                  <a href="#" class="link_hidd">Approach</a>
+                </li>
+                <li class="nav_list">
+                  <a href="#" class="link_show">Work</a>
+                  <a href="#" class="link_hidd">Work</a>
+                </li>
+                <li class="nav_list">
+                  <a href="#" class="link_show">Insights</a>
+                  <a href="#" class="link_hidd">Insights</a>
+                </li>
+              
+                <!-- Mobile close button -->
+                <li class="mobile-close-btn" >
+                  <i class="fas fa-times"></i>
+                </li>
+              </ul>
+              <button
+               class="nav_btn" onclick="toggleSidebar()">
+                <a href="#">let's talk</a>
+                <a href="#" class="_btn" ">
+                  <i class="fa-solid fa-arrow-right link_show"></i>
+                  <!-- <i class="fa-solid fa-arrow-right link_hidd"></i> -->
+                  <i class="fa-regular fa-face-smile link_hidd"></i>
+                </a>
+              </button>
+              <div class="menu-button" >
+                <span class="menu-text menu_show">menu</span>
+                <span class="menu-text menu_hidd">menu</span>
+              </div>
+            </div>
+          </div>
+          <!-- /row -->
+        </div>
+        
+      </nav>
+      <!-- </div> -->
+
+       <!-- Mobile Menu Overlay -->
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+      <div class="mobile-menu-header">
+        <div class="mobile-menu-logo">BOWEN</div>
+        <div class="mobile-menu-actions">
+          <button class="mobile-menu-talk">Let's Talk <span class="arrow">→</span></button>
+          <button class="mobile-menu-close">Close</button>
+        </div>
+      </div>
+      <ul class="mobile-menu-list">
+        <li><span class="menu-num">01</span> <span class="menu-title">Agency</span></li>
+        <li><span class="menu-num">02</span> <span class="menu-title">Expertise</span></li>
+        <li><span class="menu-num">03</span> <span class="menu-title">Approach</span></li>
+        <li><span class="menu-num">04</span> <span class="menu-title">Work</span></li>
+        <li><span class="menu-num">05</span> <span class="menu-title">Insights</span></li>
+        <li><span class="menu-num">01</span> <span class="menu-title">Agency</span></li>
+        <li><span class="menu-num">02</span> <span class="menu-title">Expertise</span></li>
+        <li><span class="menu-num">03</span> <span class="menu-title">Approach</span></li>
+        <li><span class="menu-num">04</span> <span class="menu-title">Work</span></li>
+        <li><span class="menu-num">05</span> <span class="menu-title">Insights</span></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <span class="mobile-menu-time" id="mobileMenuTime">NY 8:04:05 PM</span>
+      </div>
+    </div>
+      
+      <!-- Sidebar -->
+      <div id="sidebar" class="sidebar">
+        <div class="sidebar-header-modern">
+          <button class="sidebar-btn-main" disabled>Let's Talk <span class="sidebar-btn-icon"><i class="fa-regular fa-message"></i></span></button>
+          <button class="sidebar-close-modern" onclick="toggleSidebar()">Close <span class="close-underline"></span></button>
+        </div>
+        <div class="sidebar-content-modern">
+          <div class="sidebar-section clickable">
+            <div class="section-title-row">
+              <h3>Book an Intro Call</h3>
+              <span class="section-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+            <p>Let's talk through your needs, goals, or questions — no pressure.</p>
+          </div>
+          <div class="sidebar-section clickable">
+            <div class="section-title-row">
+              <h3>Start a Project</h3>
+              <span class="section-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+            <p>Ready to move forward? Share a few quick details and we'll take it from there.</p>
+          </div>
+          <div class="sidebar-section info">
+            <div class="info-label">Phone Support</div>
+            <div class="info-value">Call us <a href="tel:+15163083539">+1.516.308.3539</a></div>
+          </div>
+          <div class="sidebar-section info">
+            <div class="info-label">General Support</div>
+            <div class="info-value"><a href="mailto:hello@bowenmedia.com">hello@bowenmedia.com</a></div>
+          </div>
+          <div class="sidebar-section info">
+            <div class="info-label">Location</div>
+            <div class="info-value">
+              <strong>Long Island, New York</strong><br>
+              183 Mineola Blvd, Mineola, NY 11501<br>
+              Mon-Fri from 9am to 6pm EST
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sidebar-overlay" class="sidebar-overlay" onclick="toggleSidebar()"></div>
+      <!-- <div class="_header"> -->
+
+        <!-- ./header -->
+      <!-- </div> -->
+    </div>
+    <!-- end nav -->
+
+<!-- section header text -->
+    <section class="section">
+      <div class="top-text">
+        Whether you're looking for a long-term partner that functions as your full-time web and marketing arm, or looking to start with something more à la carte, our approach adapts to you.
+      </div>
+      <div class="big-heading">Two Pricing Models.</div>
+      <div class="big-subheading">One Approach.</div>
+      <div class="rotate-vertical-text">Ways we work ©</div>
+      <div class="scroll-indicator">Keep Scrolling</div>
+    </section>
+
+
+   <!-- button container  -->
+    <div class="fixed-bar">
+      <button class="tab-button" data-target="agency">Agency Subscription.</button>
+      <button class="tab-button" data-target="project">Project-Based.</button>
+      <button class="tab-button" data-target="which">Which is the one for me?</button>
+      <div class="consult-btn" onclick="document.getElementById('consult').scrollIntoView({ behavior: 'smooth' })">
+        Schedule a Consultation ✌️
+      </div>
+    </div>
+  
+    
+
+
+
+
+<!-- section one text content -->
+
+<!-- <div  class="fade-section">  </div> -->
+
+<section  id="agency" class="partnership-section">
+  <div class="left-panel">
+    <p class="small-title">→ Your Extended Team</p>
+    <h1><span class="bold">Ongoing</span> Partnership</h1>
+    <a href="#" class="intro-call">Book an intro call</a>
+  </div>
+
+  <div class="right-panel">
+    <p class="description">
+      Think of us as your on-demand marketing team. Tap into the skills you need, when you need them. One flat monthly fee gives you flexible access to our creative, technical, and strategic experts. We handle as much or as little as your priorities require, keeping momentum strong every month.
+    </p>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header">Priority Access to a Full Marketing Team <span class="plus">+</span></div>
+        <div class="accordion-content">
+          <p>Gain direct access to a team of experts without the overhead of a full-time hire. We move faster, stay aligned with your goals, and tackle what matters most.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">Smarter Spend than Hiring In-House <span class="plus">+</span></div>
+        <div class="accordion-content">
+          <p>Our subscription model gives you diverse expertise for a fraction of the cost and commitment of a full-time hire.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">Support That Flexes with Your Needs <span class="plus">+</span></div>
+        <div class="accordion-content">
+          <p>We align with your team’s goals and adjust our focus as priorities shift—keeping strategy and execution in sync.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">A True Partner for the Long Run<span class="plus">+</span></div>
+        <div class="accordion-content">
+          <p>We’re invested in your growth. Our collaborative approach is built on trust, adaptability, and results.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Strategy Meets Execution <span class="plus">+</span></div>
+        <div id="strategy-meets-execution" class="accordion-content">
+          <p>Every action we take ladders up to your big picture. No wasted effort—just smart, strategic moves that drive outcomes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+
+<!-- section two text content -->
+
+<section id="agency" class="partnership-section">
+  <div class="left-panel">
+    <p class="small-title">→ Your Extended Team</p>
+    <h1><span class="bold">The Rates</span> </h1>
+    <a href="#" class="intro-call">Book an intro call</a>
+  </div>
+
+  <div class="right-panel">
+    <p id="pricing" class="description">
+      How We Price Partnerships
+    </p>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header">  What does it cost? <span class="plus">+</span></div>
+        <div class="accordion-content">
+          <p>
+            Our ongoing partnerships typically start at $3,500/month, with many brands investing more for dedicated support, strategy, and execution. We’ll recommend the right plan based on your needs — whether it’s consistent monthly momentum or scaling for growth..</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">What impacts the monthly rate?<span class="plus">+</span></div>
+        <div class="accordion-content">
+          <p> Your monthly rate is based on the size and complexity of your digital presence, the amount of design, development, or marketing work required, and how quickly you want to move. We’ll align the plan to match your objectives and internal resources.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">Do you work with large retainers?<span class="plus">+</span></div>
+        <div class="accordion-content">
+          <p> Yes. Many of our clients engage us at $10,000 per month and up, where we function as an embedded digital and marketing partner. This allows us to create the most impact, handle larger initiatives, and maintain flexibility as priorities shift.</p>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <div class="accordion-header">What if I’m not ready for a monthly retainer?<span class="plus">+</span></div>
+        <div id="strategy-meets-execution" class="accordion-content">
+          <p>  We also offer project-based pricing for companies starting with a specific initiative, like a website redesign or marketing campaign. This is a great way to experience our team before scaling into a long-term partnership.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- section three text content -->
+
+<section id="project" class="partnership-section">
+  <div class="left-panel">
+    <p class="small-title">→ Purpose-Built for Impact</p>
+    <h1><span class="bold">High-Impact</span> Projects</h1>
+    <a href="#" id="book" class="intro-call">Book an intro call</a>
+  </div>
+
+  <div class="right-panel">
+    <p class="description">
+      We deliver high-impact project-based solutions tailored to your goals. Whether you need support in a specific area or a larger initiative, we approach every project with craftsmanship, precision, and care. Each engagement is built around your exact needs.
+    </p>
+
+    <div id="wit-calar" class="accordion">
+      <div id="high-impact-projects" class="accordion-item">
+        <div class="accordion-header">Website Design and Development <span class="plus">+</span></div>
+        <div class="accordion-content">
+          <p>
+            Tailored websites designed to engage, convert, and perform
+          </p>
+        </div>
+      </div>
+
+      <div id="high-impact-projects" class="accordion-item">
+        <div class="accordion-header">Brand Identity and Messaging <span class="plus">+</span></div>
+        <div class="accordion-content">
+          <p>
+            Positioning your brand for impact with visual and verbal identity.
+          </p>
+        </div>
+      </div>
+
+      <div id="high-impact-projects" class="accordion-item">
+        <div class="accordion-header"> UX/UI and Digital Product Design <span class="plus">+</span></div>
+        <div class="accordion-content">
+          <p>
+            Smart interfaces built to deliver seamless user experiences.</p>
+        </div>
+      </div>
+      <div id="high-impact-projects" class="accordion-item">
+        <div class="accordion-header">Campaign Creative and Landing Pages<span class="plus">+</span></div>
+        <div class="accordion-content">
+          <p>
+            Targeted digital campaigns designed for results.
+          </p>
+        </div>
+      </div>
+      <div  id="high-impact-projects" class="accordion-item">
+        <div class="accordion-header">SEO and Performance Optimization <span class="plus">+</span></div>
+        <div id="strategy-meets-execution" class="accordion-content">
+          <p>
+            Technical audits, content updates, and improvements to boost visibility.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+
+<!-- section four text content -->
+
+
+<section id="which" class="partnership-section">
+  <div class="left-panel">
+    <p class="small-title">→ Two Pricing Models</p>
+    <h1><span class="bold">Find the </span> Right Fit</h1>
+    <a href="#" id="book" class="intro-call">Book an intro call</a>
+  </div>
+
+  <div class="right-panel">
+    <p class="description">
+      Not sure which approach is best for your company? Here are a few scenarios that can guide you in determining the optimal choice.
+    </p>
+<!-- id="ongoing-partnership" class="tag-header"  class="accordion-item"   class="accordion-content"-->
+    <div  id="wit-calar" class="accordion">
+      <div id="high-impact-projects" >
+        <div id="ongoing-partnership" class="tag-header">Ongoing Partnership</div>
+        <div class="text-br" id="strategy-meets-execution" >
+          <p >
+            Are you a Marketing Director looking for a few more hands to execute your strategy?
+            <br> Do you manage multiple projects, campaigns, sites, or brands that require ongoing attention?<br>
+            Are you an executive deciding how to best invest in marketing resources? <br>
+            Could you benefit from ongoing strategy, execution, and accountability?<br> 
+            Does the marketing department feel spread thin and needs some extra support?</p>
+        </div>
+      </div>
+
+      <div id="high-impact-projects" class="accordion-item">
+        <div id="ongoing-partnership" class="accordion-header">Project-Based</div>
+        <div class="text-br" id="strategy-meets-execution" >
+          <p >
+            Do you have your needs and scope of work clearly defined to share? <br>
+            Are you facing a tight deadline or immediate need that needs to be addressed?<br>
+            Are your needs based on something that does not require ongoing strategy or services?<br>
+            Are you looking for a reputable company that can deliver on a very important project?<br>
+            Is your organization legally limited from engaging in an ongoing subscription partnership?  <br>        </p>
+        </div>
+      </div>
+
+      <div  id="high-impact-projects" class="accordion-item">
+        <div id="ongoing-partnership" class="accordion-header">Need to talk it out? We’re a call away.</div>
+        <div id="strategy-meets-execution" class="text-br" >
+          <p >
+            Things are not always black and white, or ever static. In fact, each partnership we form with our clients is unique in objectives, challenges, audiences, needs, and goals, in addition to how they evolve over time. <br> You may have many priorities, and we’re here to help you arrive at the best option for the business you represent, aiming to accomplish great things together along the way.        </div>
+      </div>
+ 
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- footer -->
+    <footer class="footer" id="footer">
+      <!--  -->
+      <div class="footerBg"></div>
+      <div class="footerItemTop">
+        <span>ARE YOU READY?</span>
+        <div class="footerAnimitionText">
+
+          <ul class="footerAnimitionTextlist">
+                    <li class="">
+                      <span href="#" class="footerAnimitionHover1 dis-block" >let's</span>
+                      <span href="#" class="footerAnimitionHidd dis-block">let's</span>
+                    </li>
+                    <li class="">
+                      <span href="#" class="footerAnimitionHover2 dis-block">do</span>
+                      <span href="#" class="footerAnimitionHidd2 dis-block">do</span>
+                    </li>
+                    <li class="">
+                      <span href="#" class="footerAnimitionHover3 dis-block">This</span>
+                      <span href="#" class="footerAnimitionHidd3 dis-block">This</span>
+                    </li>
+                  </ul>
+
+      </div>
+      </div>
+      <!--  ./footerItemTop -->
+         <dev class="">
+      <div class="footerItemCenter">
+        <ul class="footerItemMenu">
+          <li><a href="#">BOWEN® builds websites that scale.</a></li>
+          <li><a href="#"></a></li>
+        </ul>
+        <div class="footerTimer">
+          <div class="timer">
+            <span id="dateTime"></span>
+            <p id="greeting"></p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="demo-container">
+          <div class="progress-bar">
+            <div class="progress-bar-value"></div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <!-- footerItemCenter -->
+
+      <div class="footerItemBottom">
+        <ul class="footerMenuBottom">
+           <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li>BOWEN® © MMXXV</li>
+        </ul>
+<div class="dropdownfooterToggel">
+  <div id="toggleGBT">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </div>
+
+<div id="menuGBT">
+
+          <!--  -->
+          <div class="dropdownF"  id="fatherItim">
+
+
+            <!-- <div class="container"> -->
+                <div class="ppf">
+                   <ul class="fourBtn">
+                    <li class="_fli">
+                      <a href="#" class="fhow">Some Industries We Serve</a>
+                      <a href="#" class="fhidd">Some Industries We Serve</a>
+                    </li>
+                    <li class="_fli">
+                      <a href="#" class="fhow">Some Markets We Serve</a>
+                      <a href="#" class="fhidd">Some Markets We Serve</a>
+                    </li>
+                  </ul>
+                   <ul class="fItemBtn">
+                    <li class="_fli">
+                      <a href="#" class="fhow">Financial Services</a>
+                      <a href="#" class="fhidd">Financial Services</a>
+                    </li>
+                    <li class="_fli">
+                      <a href="#" class="fhow">Banking</a>
+                      <a href="#" class="fhidd">Banking</a>
+                    </li>
+                      <li class="_fli">
+                      <a href="#" class="fhow">Commercial Real Estate</a>
+                      <a href="#" class="fhidd">Commercial Real Estate</a>
+                    </li>
+                      <li class="_fli">
+                      <a href="#" class="fhow">Franchise</a>
+                      <a href="#" class="fhidd">Franchise</a>
+                    </li>
+                  </ul>
+
+                </div>
+
+              <!-- close my dropdown -->
+
+            <!-- </div> -->
+          </div>
+
+  <!--  -->
+</div>
+<!--  -->
+</div>
+  
+        <!--  -->
+      </div>
+      <!-- footerItemBottom -->
+       </dev>
+      <!-- footerItemBottom -->
+      <!-- </div> -->
+      <div id="footer-fluid-canvas-container" style="position: absolute; left:0; top:0; width:100%; height:100%; pointer-events:none; z-index:1;">
+        <canvas id="animationCanvas" style="width:100%;height:100%;display:block;"></canvas>
+      </div>
+    </footer>
+
+    <!-- ./ -->
+     
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="assets/js/approach.js" ></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/footerAnimation.js"></script>
+    <script src="assets/js/animitionScrolling.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script> -->
+      <!-- <script src="assets/js/jquery.nicescroll.js"></script> -->
+
+    <!-- Fluid Splash Effect for Footer Only -->
+    <script>
+    (function() {
+      const canvas = document.getElementById('footer-fluid-canvas');
+      const container = document.getElementById('footer-fluid-canvas-container');
+      if (!canvas || !container) return;
+
+      // Resize canvas to fit container
+      function resizeCanvas() {
+        canvas.width = container.offsetWidth;
+        canvas.height = container.offsetHeight;
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+
+      // Simple splash effect (for demo, not full fluid sim)
+      let ctx = canvas.getContext('2d');
+      let splashes = [];
+
+      function addSplash(x, y) {
+        splashes.push({x, y, r: 0, alpha: 1});
+      }
+
+      // Listen only on footer
+      container.parentElement.addEventListener('mousemove', function(e) {
+        const rect = container.getBoundingClientRect();
+        if (e.clientY >= rect.top && e.clientY <= rect.bottom) {
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          addSplash(x, y);
+        }
+      });
+
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        splashes.forEach(splash => {
+          ctx.beginPath();
+          ctx.arc(splash.x, splash.y, splash.r, 0, 2 * Math.PI);
+          ctx.strokeStyle = `rgba(100,200,255,${splash.alpha})`;
+          ctx.lineWidth = 2 + 6 * splash.alpha;
+          ctx.stroke();
+          splash.r += 2;
+          splash.alpha *= 0.94;
+        });
+        // Remove faded splashes
+        splashes = splashes.filter(s => s.alpha > 0.05);
+        requestAnimationFrame(animate);
+      }
+      animate();
+    })();
+    </script>
+
+   
+  </body>
+</html>
