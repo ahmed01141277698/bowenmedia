@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f5f5;
+  color: #000;
+  overflow-x: hidden;
+}
+/* the section  */
+.section {
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+.top-text {
+  font-size: 1rem;
+  font-weight: 600;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.4s;
+}
+/* .big-heading {
+  font-size: 3.8rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.8s;
+} */
+
+
+.big-heading {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+ 
+  white-space: nowrap;
+  overflow: hidden;
+  
+  width: 0;
+  animation: typing 1s steps(25) forwards, blink 0.9s step-end infinite;
+  color:black;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 25ch } 
+}
+
+
+@keyframes blink {
+  0%, 100% { border-color: transparent }
+
+}
+
+.big-subheading {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  color: #3a47ff;
+  font-weight: 400;
+  /* opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 1.2s; */
+  white-space: nowrap;
+  overflow: hidden;
+
+  animation: oned 1s steps(25) forwards, porch 0.10s step-end infinite;
+
+}
+@keyframes oned {
+  from { width: 0 }
+  to { width: 12ch }
+}
+
+@keyframes porch {
+  0%, 100% { border-color: transparent }
+
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.rotate-vertical-text {
+  position: absolute;
+  top: 40%;
+  right: 40px;
+  transform: rotate(90deg) translateY(-50%);
+
+  /* writing-mode: vertical-rl;
+  transform: rotate(180deg); 
+   font-weight: 600; */
+  transform-origin: right center;
+  font-size: 0.99rem;
+  font-weight: 600;
+  color: black;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .big-heading, .big-subheading {
+    font-size: 2.2rem;
+  }
+  .top-text {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+/* the tab buttons */
+
+.fixed-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  padding: 0.5rem 0.5rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.6s;
+  
+}
+
+.tab-button {
+  background: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 0.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border:none;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.tab-button:hover,
+.tab-button.active {
+  color: #3a47ff;
+  transform: translateY(-2px);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.consult-btn {
+  justify-self: end;
+  border: 1px solid black;
+  padding: 0.6rem 1.4rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.consult-btn:hover {
+  background: #f0f0f0;
+}
+
+
+
+
+/* section one text content */
+
+
+
+.partnership-section {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  padding: 50% 5% 0 5%;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.4s;
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+    
+}
+
+    .partnership-section.show{
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+ 
+
+  
+
+
+.left-panel {
+  flex: 1;
+  top: 100px;
+  position: sticky;
+  
+}
+
+.small-title {
+  color: gray;
+  font-size: 17px;
+  padding-bottom: 8px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.7s;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 10px 0;
+}
+
+h1 .bold {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.intro-call {
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+  padding-bottom: 3px;
+  transition: color 0.3s;
+  font-size: 15px;
+}
+
+.intro-call:hover {
+  color: #aaa;
+}
+
+.right-panel {
+  flex: 2;
+  animation: fadeInUp 1s ease;
+}
+.description{
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 35px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.accordion{
+  background-color: #000;
+}
+
+.accordion-item {
+  border: none;
+  padding: 20px 0;
+  background-color: #000;
+  color: white;
+}
+
+.accordion-header {
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:22px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.9s;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  line-height: 1.6;
+  /* color: #ccc; */
+  border-bottom: 0.0001rem solid #ccc;
+  padding-top: 10px;
+  font-size: 15px ;
+
+}
+#strategy-meets-execution{
+  border: none;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 200px;
+}
+
+
+ /* section two text content */
+
+ #pricing{
+  font-size: 18px;
+ }
+
+
+ /* section three text content */
+
+
+#which, #project{
+  background-color: #f5f5f5;
+  color: #000;
+ }
+
+ #book,#high-impact-projects{
+  color: #000;
+  background-color: #f5f5f5;
+ }
+
+
+ /* section four text content */
+
+
+ .text-br{
+  font-size: 9px;
+  border: none;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.15s;
+ }
+
+ 
+/* 
+ #ongoing-partnership{
+  font-size: 16px;
+color: #000; 
+border: none;
+
+} */
+
+.tag-header{
+  background-color: #f5f5f5;
+  color: #000;
+  font-weight: bold;
+}
+#wit-calar{
+  background-color: #f5f5f5;
+}
+
